@@ -34,7 +34,7 @@ def create_leaks():
 	create_leaks_table =  '''
 						CREATE TABLE IF NOT EXISTS leaks (
 							id INTEGER PRIMARY KEY AUTOINCREMENT,
-							phone 		VARCHAR(60),
+							phone 		BIGINT,
 							facebook_id VARCHAR(60),
 							name 		VARCHAR(60),
 							surname		VARCHAR(60),
@@ -126,7 +126,7 @@ def main():
 			i = i + 1
 			try:
 				if len(row) == 12:
-					record = (i,row[0],row[1],row[2],row[3],row[4],row[5],row[6],row[7],row[8],row[9],row[10],row[11], nation_id)
+					record = (i,int(row[0]),row[1],row[2],row[3],row[4],row[5],row[6],row[7],row[8],row[9],row[10],row[11], nation_id)
 				else:
 					print ("[ERR] Index range is " + str(len(row)) + " in row " + str(i) + ". Row Content:")
 					print ("      " + str(row))
@@ -154,7 +154,7 @@ def main():
 		conn.close()
 
 	try:
-		print ("[+] Creating indexes for table leaks upon phone numbers")
+		print ("[+] Creating indexes for table leaks upon phone numbers...")
 		leaks_index()
 		print ("[+++] Success! Your DB is ready")
 	except Error as err:
