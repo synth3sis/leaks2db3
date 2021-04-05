@@ -154,7 +154,7 @@ def main():
 		conn.close()
 
 	try:
-		print ("[+] Creatin index for table leaks")
+		print ("[+] Creating indexes for table leaks upon phone numbers")
 		leaks_index()
 		print ("[+++] Success! Your DB is ready")
 	except Error as err:
