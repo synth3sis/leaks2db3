@@ -36,3 +36,12 @@ which are inteded to represent time, while the csv delimiter is the character ":
 ```bash
 sed -i 's^12:00:00^12.00.00^g' your_filelist.csv
 ```
+
+<br>
+
+### PoC
+With bash grep:
+![alt tag](https://i.ibb.co/GRBf3k6/before-grep.png)
+<br>
+With sqlite3 query:
+![alt tag](https://i.ibb.co/XSp7ZLS/after-sqlite3.png)
