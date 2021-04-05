@@ -13,7 +13,7 @@ The script automatically goes past the malformed csv lines and creates indexes f
 ```bash
 apt install -y python3
 apt install -y sqlite3
-
+```
 
 #### RUN
 
