@@ -6,6 +6,24 @@ The script automatically goes past the malformed csv lines and creates indexes f
 
 <br>
 
+#### REQUIREMENTS
+ - python3
+ - sqlite3
+
+```bash
+apt install -y python3
+apt install -y sqlite3
+
+
+#### RUN
+
+Change the informations in the first 4 assignment and simply run
+```bash
+./leakrecord.py
+```
+
+<br>
+
 ## Important
 
 Before you run leakrecord.py you must adjust the csv file because is full of "12:00:00" strings
