@@ -8,8 +8,8 @@ The script automatically goes past the malformed csv lines and creates indexes f
 
 ## Important
 
-Before you run leakrecord.py you must adjust the csv file because is full of "12:00:00"
-where the csv delimiter is the character ":".
+Before you run leakrecord.py you must adjust the csv file because is full of "12:00:00" strings
+which are inteded to represent time, while the csv delimiter is the character ":".
 <br>
 
 #### Proved replace method:
