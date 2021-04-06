@@ -48,4 +48,4 @@ With bash grep:
 With sqlite3 query:
 <br>
 ![alt tag](https://i.ibb.co/XSp7ZLS/after-sqlite3.png)
-v
+
