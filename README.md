@@ -44,6 +44,8 @@ With bash grep:
 <br>
 ![alt tag](https://i.ibb.co/GRBf3k6/before-grep.png)
 <br>
+<br>
 With sqlite3 query:
 <br>
 ![alt tag](https://i.ibb.co/XSp7ZLS/after-sqlite3.png)
+v
