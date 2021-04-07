@@ -2,7 +2,7 @@
 
 leaks2sqlite3 is a simple python3 parser to import 03/04/2021 published facebook leaks, from a csv to a SQLite3 DB.
 <br>
-The script automatically goes past the malformed csv lines and creates indexes for the phone numbers.
+The script automatically goes past the malformed csv lines and creates indexes for phone numbers, names, surnames, facebook_id.
 
 <br>
 
@@ -19,7 +19,7 @@ apt install -y sqlite3
 
 ### RUN
 
-Change the informations in the first 4 assignment and simply run
+Change the informations in the first 2 assignment and simply run
 ```bash
 ./leakrecord.py
 ```
