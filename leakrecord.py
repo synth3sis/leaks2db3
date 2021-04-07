@@ -77,7 +77,7 @@ def leaks_index():
 	print ("    > Surname Indexes...")
 	index_query = "CREATE INDEX surname_index ON leaks (surname);"
 	cur.execute(index_query)
-	print("     > Facebook ID Indexes...")
+	print ("    > Facebook ID Indexes...")
 	index_query = "CREATE INDEX facebookid_index ON leaks (facebook_id);"
 
 
@@ -95,7 +95,7 @@ def main():
 
 	if not os.path.isfile(facebookleaks_db):
 		with open(facebookleaks_db, 'w'): pass
-		print("[+] " + facebookleaks_db + "created successfully")
+		print("[+] " + facebookleaks_db + " created successfully")
 		create_leaks()
 	try:
 		conn = create_conn(facebookleaks_db)
@@ -147,7 +147,7 @@ def main():
 		conn.close()
 
 	try:
-		print ("[+] Creating indexes for table leaks upon phone numbers...")
+		print ("[+] Creating indexes for table leaks")
 		leaks_index()
 		print ("[+++] Success! Your DB is ready")
 	except Error as err:
