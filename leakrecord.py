@@ -2,11 +2,11 @@
 
 import csv
 import os
-import sqlite3
-from sqlite3 import Error
 import os.path
 import locale
 import sys
+import sqlite3
+from sqlite3 import Error
 
 ####################################################################
 #		Change the following 2 lines to modify parameters
