@@ -11,8 +11,8 @@ import sys
 ####################################################################
 #		Change the following 2 lines to modify parameters
 ####################################################################
-csvFile = 'facebook_it.csv'
-facebookleaks_db = 'facebookleaks_it.db'
+csvFile = 'facebook.csv'
+facebookleaks_db = 'facebookleaks.db'
 
 
 
@@ -77,8 +77,12 @@ def leaks_index():
 	print ("    > Surname Indexes...")
 	index_query = "CREATE INDEX surname_index ON leaks (surname);"
 	cur.execute(index_query)
+	print ("    > Email Indexes...")
+	index_query = "CREATE INDEX email_index ON leaks (email);"
+	cur.execute(index_query)
 	print ("    > Facebook ID Indexes...")
 	index_query = "CREATE INDEX facebookid_index ON leaks (facebook_id);"
+	cur.execute(index_query)
 
 
 def print_usage():
